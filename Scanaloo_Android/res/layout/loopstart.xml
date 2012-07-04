@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/lytrInfo"
+    	android:layout_width="fill_parent"
+    	android:layout_height="100dp">
+	    <LinearLayout
+	        xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/lytTitle"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+	        
+	 	    <TextView
+		        android:id="@+id/lblTitle"
+		        android:layout_width="60dp"
+		        android:layout_height="wrap_content"
+		        android:text="Title:" />
+
+		    <EditText
+		        android:id="@+id/title"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:inputType="text" />       
+	    </LinearLayout>
+
+
+	    <LinearLayout
+	        xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/lytCategory"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/lytTitle" >
+	
+	
+		    <TextView
+		        android:id="@+id/lblCategory"
+		        android:layout_width="60dp"
+		        android:layout_height="wrap_content"
+		        android:text="Category:" />
+		    
+		
+		    <EditText
+		        android:id="@+id/category"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:inputType="text"/>
+    
+	    </LinearLayout>
+    </RelativeLayout>
+    
+    <SurfaceView
+	        android:id="@+id/preview"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_below="@+id/lytrInfo"
+	        android:layout_above="@+id/lytrButton">
+	</SurfaceView>
+   
+	<RelativeLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/lytrButton"
+	    android:layout_width="match_parent"
+	    android:layout_height="35dp"
+	    android:layout_alignParentBottom="true">
+	    
+	    <Button android:id="@+id/loop" 
+	           android:layout_width="wrap_content" 
+	           android:layout_height="wrap_content" 
+	           android:text="Loop!"
+	           android:layout_alignParentBottom="true"
+	           android:layout_alignParentRight="true" />
+	    
+	</RelativeLayout>
+ </RelativeLayout>

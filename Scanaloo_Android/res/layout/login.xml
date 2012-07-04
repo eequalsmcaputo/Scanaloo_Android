@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_menubar_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/menubar" />
+	
+	<RelativeLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/lytrLogin"
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_above="@+id/lblStatus"
+	    android:layout_below="@id/include_menubar_login"
+	    android:orientation="vertical" >
+	    
+	    <TextView
+	        android:id="@+id/lblUser"
+	        android:layout_alignBaseline="@+id/edtUser"
+	        android:layout_height="wrap_content"
+	        android:layout_width="60dp"
+	        android:text="User:"
+	        android:textSize="20dp"
+	        />
+	    <EditText
+	        android:id="@id/edtUser"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/lblUser"
+	        android:inputType="text"
+	        android:ems="10" />
+	
+	    <Button
+	        android:id="@+id/btnLogin"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@id/edtUser"
+	        android:layout_below="@id/edtUser"
+	        android:text="Login"
+	        android:textSize="20dp"
+	        android:onClick="doLogin" />
+	</RelativeLayout>
+	
+	<TextView
+	    android:id="@id/lblStatus"
+	    android:layout_width="match_parent"
+	    android:layout_height="30dp"
+	    android:layout_alignParentBottom="true"
+	    android:text=""
+	    android:textSize="20dp" />
+
+</RelativeLayout>

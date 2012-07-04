@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Scanaloo</string>
+    <string name="slapi">http://scanaloo.com/</string>
+    <!--<string name="slapi">http://10.0.0.3:8080/ScanalooService/</string>-->
+    <string name="bg_list">#efefef</string>
+    <string name="bg_scanaloo">#E9672C</string>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Single menu item
+         Set id, icon and Title for each menu item
+    -->
+    <item android:id="@+id/mnuLoop"
+          android:icon="@drawable/icon_cam_on"
+          android:title="New Loop" />
+    <item android:id="@+id/mnuMyLoops"
+          android:icon="@drawable/scanaloo_loop"
+          android:title="My Loops" />
+    <item android:id="@+id/mnuLogout"
+          android:icon="@drawable/btn_close_normal"
+          android:title="Logout" />
+</menu>
